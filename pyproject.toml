@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cors-policy-checker"
+version = "0.3.0"
+description = "Review a CORS origin against a validated policy without sending credentials."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Oscar Opemba" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+Repository = "https://github.com/Oscar-Opemba/cors-policy-checker"
+Issues = "https://github.com/Oscar-Opemba/cors-policy-checker/issues"
+
+[project.scripts]
+cors-policy-checker = "app:main"
+
+[tool.setuptools]
+py-modules = ["app", "common", "security_utils"]

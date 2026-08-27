@@ -1,0 +1,2 @@
+[console_scripts]
+cors-policy-checker = app:main
